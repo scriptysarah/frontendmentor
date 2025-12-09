@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    color: hsl(30, 10%, 34%); /* Default text color */
+}
+
+html {
+    font-size: 16px; 
+}
+
+h1, h2, h3 {
+    font-family: 'Young Serif', serif;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    margin: 2rem;
+}
+
+h1 {
+    color: hsl(24, 5%, 18%); /* Darker Heading */
+}
+
+h2 {
+    color: hsl(14, 45%, 36%); /* Brown Heading */
+}
+
+h3 {
+    color: hsl(332, 51%, 32%); /* Berry/Purple Heading */
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1.5625rem;
+    padding: 1.25rem 2.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    max-width: 37.5rem; /* 600px */
+}
+
+.prepare {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+}
+
+table {
+    padding: 0; /* Removed padding on table, use cell padding */
+    border-collapse: collapse;
+    width: 100%;
+    /* Added margin to separate table from surrounding content */
+    margin: 1.25rem 0; 
+}
+
+/* Consolidated cell padding and styles */
+th, td {
+    padding: 0.625rem 1.5rem; /* ~10px top/bottom, ~24px left/right */
+    text-align: left;
+    border-bottom: none; /* Removed redundant border here */
+}
+
+th {
+    font-weight: 400;
+    color: inherit; /* Use default text color */
+}
+
+td {
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+}
+
+/* Row separation and removing last border */
+tr {
+    border-bottom: 1px solid hsl(30, 10%, 80%); /* Use a lighter border color for separator */
+}
+
+tr:last-child {
+    border-bottom: none; 
+}
+
+ul, ol {
+    /* Change from 'inside' to 'outside' to match typical recipe list layout */
+    list-style-position: outside; 
+    font-size: 0.875rem; 
+    /* Add left padding to indent the list items */
+    padding-left: 1rem; 
+    /* Space below lists to separate from next section/hr */
+    margin: 0.75rem 0 1.5rem 0; 
+}
+
+ul li, ol li {
+    margin-bottom: 0.5rem;
+    /* Add padding for better spacing after the marker */
+    padding-left: 1rem; 
+}
+
+::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+@media (max-width: 37.5rem) {
+    body {
+        margin: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: none;
+        padding: 1rem 1rem; 
+        border-radius: 0;
+    }
+    
+    img {
+        max-width: 100%;
+        border-radius: 0;
+    }
+    
+    .prepare {
+        padding: 1rem;
+    }
+    
+    /* Reduced table padding for mobile */
+    th, td {
+        padding: 0.625rem 1rem;
+    }
+}
