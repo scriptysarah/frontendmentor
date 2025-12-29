@@ -2,37 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Social links profile</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; margin-top: 20px; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  <main>
-    <div class="profile-card">
-      <div class="image">
-        <img src="./images/sarah.png" alt="Profile Picture">
-      </div>
-        <h2>Sarah Mohamed</h2>
-  <h4>Dubai, United Arab Emirates</h4>
-  <p>"Front-end developer and avid reader."</p>
-  <div class="buttons">
-  <button>GitHub</button>
-  <button>Tiktok</button>
-  <button>LinkedIn</button>
-  <button>Twitter</button>
-  <button>Instagram</button>
-    </div>
+  <main id="main-content">
+    
+    <article class="profile-card">
+      
+      <header>
+        <div class="image">
+          <img src="./images/sarah.png" alt="Headshot of Sarah Mohamed">
+        </div>
+        
+        <h1>Sarah Mohamed</h1>
+        
+        <h2>Dubai, United Arab Emirates</h2>
+      </header>
+
+      <p class="bio">"Front-end developer and avid reader."</p>
+
+      <nav aria-label="Social media links">
+        <ul class="link-list">
+          <li>
+            <a href="https://github.com/scriptysarah/" 
+               class="button" 
+               aria-label="Visit Sarah's GitHub profile">GitHub</a>
+          </li>
+          <li>
+            <a href="#" 
+               class="button" 
+               aria-label="Follow Sarah on TikTok">TikTok</a>
+          </li>
+          <li>
+            <a href="#" 
+               class="button" 
+               aria-label="Connect with Sarah on LinkedIn">LinkedIn</a>
+          </li>
+          <li>
+            <a href="#" 
+               class="button" 
+               aria-label="Follow Sarah on Twitter">Twitter</a>
+          </li>
+          <li>
+            <a href="#" 
+               class="button" 
+               aria-label="Follow Sarah on Instagram">Instagram</a>
+          </li>
+        </ul>
+      </nav>
+
+    </article>
   </main>
-  <div class="attribution">
-   
-    Coded by <a href="https://github.com/scriptysarah/">sarah</a>.
-  </div>
+
+  <footer class="attribution">
+    Coded by <a href="https://github.com/scriptysarah/" aria-label="View Sarah's GitHub profile">sarah</a>.
+  </footer>
+
 </body>
 </html>
