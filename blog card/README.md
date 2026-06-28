@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Screenshot
 
-![App Screenshot](https://imgur.com/a/6SFPw7V)
+![App Screenshot](/screenshot.png)
 
 ---
 
