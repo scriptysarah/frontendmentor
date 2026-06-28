@@ -16,8 +16,7 @@ Users should be able to:
 
 ### Screenshot
 
-![App Screenshot](//screenshot.png)
-
+![App Screenshot](./screenshot.png)
 ---
 
 ## My process
